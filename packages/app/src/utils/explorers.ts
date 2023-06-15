@@ -37,8 +37,7 @@ export const EXPLORERS_CONFIG: Record<NETWORK, ExplorerData> = {
     networkExplorerApiUrl: "https://blockscout.com/xdai/mainnet/api",
     safeUrl: "https://app.safe.global/gno:",
     safeTransactionApi: "https://safe-transaction-gnosis-chain.safe.global/",
-    verifyContractUrl:
-      "https://docs.blockscout.com/for-users/smart-contract-interaction/verifying-a-smart-contract",
+    verifyContractUrl: "https://docs.blockscout.com/for-users/smart-contract-interaction/verifying-a-smart-contract",
   },
   [NETWORK.POLYGON]: {
     networkExplorerName: "Polygonscan",
@@ -85,6 +84,15 @@ export const EXPLORERS_CONFIG: Record<NETWORK, ExplorerData> = {
     verifyContractUrl: "https://snowtrace.io/verifyContract",
     explorerApiKey: REACT_APP_ETHERSCAN_KEY,
   },
+  [NETWORK.CANTO]: {
+    networkExplorerName: "Tuber Build",
+    networkExplorerUrl: "https://tuber.build",
+    networkExplorerApiUrl: "https://tuber.build/api",
+    safeTransactionApi: "http://139.144.191.124/txs/",
+    safeUrl: "https://safe-staging.neobase.one/canto:",
+    verifyContractUrl: "https://tuber.build/verifyContract",
+    explorerApiKey: REACT_APP_ETHERSCAN_KEY,
+  }
 }
 
 export const getNetworkExplorerInfo = (chainId: number) => {

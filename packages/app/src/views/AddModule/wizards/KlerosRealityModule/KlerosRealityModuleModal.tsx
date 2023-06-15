@@ -199,7 +199,7 @@ export const KlerosRealityModuleModal = ({
   const { sdk, safe, provider } = useSafeAppsSDKWithProvider()
   // hack to resolve mainnet ENS
   const mainnetProvider = useMemo(
-    () => new ethers.providers.InfuraProvider(1, process.env.REACT_APP_INFURA_ID),
+    () => new ethers.providers.JsonRpcProvider('https://canto.slingshot.finance'),
     [],
   )
 
